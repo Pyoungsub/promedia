@@ -182,7 +182,7 @@
                         }"
                     >
                         <span @click="active =! active" class="block flex items-center justify-between w-full cursor-pointer text-xl relative p-4 font-noto font-bold" :class="{'bg-point-100 text-white': currentRoute == 'home' || active}">
-                            회원사
+                            회원사 소식
                             <svg :class="active ? 'stroke-white' : 'stroke-black'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path x-show="!active" d="M6 9l6 6 6-6"/>
                                 <path x-show="active" d="M18 15l-6-6-6 6"/>
@@ -272,7 +272,7 @@
                             <ul class="p-4">
                                 <li><a href="{{ route('boards.announcements') }}" class="block mb-[0.5em] pl-2">공지사항</a></li>
                                 <li><a href="{{ route('boards.media') }}" class="block mb-[0.5em] pl-2">보도자료</a></li>
-                                <li><a href="{{ route('member.lists') }}" class="block pl-2">회원사</a></li>
+                                <li><a href="{{ route('member.lists') }}" class="block pl-2">회원사 소식</a></li>
                                 <li><a href="{{ route('boards.general') }}" class="block mb-[0.5em] pl-2">자유게시판</a></li>
                             </ul>
                         </div>
