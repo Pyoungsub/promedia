@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "c58feaa8e5e8d9e0d72a812252b59aa2",
-=======
     "content-hash": "dba58a2264583680e13bf2510cda1004",
->>>>>>> bc662e7 (modified code)
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3632,8 +3628,6 @@
             "time": "2021-09-25T23:10:38+00:00"
         },
         {
-<<<<<<< HEAD
-=======
             "name": "spatie/pdf-to-image",
             "version": "2.3.0",
             "source": {
@@ -3694,7 +3688,6 @@
             "time": "2024-03-07T09:42:07+00:00"
         },
         {
->>>>>>> bc662e7 (modified code)
             "name": "swiftmailer/swiftmailer",
             "version": "v6.3.0",
             "source": {

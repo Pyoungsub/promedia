@@ -3,14 +3,6 @@
 namespace App\Http\Livewire\Boards;
 
 use Livewire\Component;
-<<<<<<< HEAD
-
-class References extends Component
-{
-    public function render()
-    {
-        return view('livewire.boards.references');
-=======
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Reference;
@@ -42,6 +34,5 @@ class References extends Component
     {
         $references = Reference::orderBy('created_at', 'DESC')->paginate(10);
         return view('livewire.boards.references', ['references' => $references]);
->>>>>>> bc662e7 (modified code)
     }
 }

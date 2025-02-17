@@ -26,9 +26,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
-<<<<<<< HEAD
-=======
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Swiper from 'swiper';
 window.Swiper = Swiper.use([Autoplay, Navigation, Pagination]);
->>>>>>> bc662e7 (modified code)

@@ -3,14 +3,6 @@
 namespace App\Http\Livewire\Events;
 
 use Livewire\Component;
-
-<<<<<<< HEAD
-class Photos extends Component
-{
-    public function render()
-    {
-        return view('livewire.events.photos');
-=======
 use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
@@ -122,6 +114,5 @@ class Photos extends Component
     {
         $events = Event::orderBy('date', 'desc')->with('first_event_photo')->paginate(12);
         return view('livewire.events.photos', ['events' => $events]);
->>>>>>> bc662e7 (modified code)
     }
 }

@@ -15,8 +15,4 @@ class ArticlesOfIncorporation extends Component
             'articleFile' => Str::markdown(file_get_contents($articleFile)),
         ]);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> bc662e7 (modified code)

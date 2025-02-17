@@ -3,17 +3,6 @@
 namespace App\Http\Livewire\Main;
 
 use Livewire\Component;
-<<<<<<< HEAD
-
-class Carousel extends Component
-{
-    public function render()
-    {
-        $this->dispatchBrowserEvent('jquery');
-        return view('livewire.main.carousel');
-    }
-}
-=======
 use Illuminate\Support\Facades\Storage;
 use Livewire\WithFileUploads;
 use App\Models\Carousel as Slider;
@@ -88,4 +77,3 @@ class Carousel extends Component
         return view('livewire.main.carousel', ['carousels' => $carousels]);
     }
 }
->>>>>>> bc662e7 (modified code)

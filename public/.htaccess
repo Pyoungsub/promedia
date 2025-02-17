@@ -1,13 +1,7 @@
 <IfModule mod_rewrite.c>
-<<<<<<< HEAD
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-=======
 #    <IfModule mod_negotiation.c>
 #        Options -MultiViews -Indexes
 #    </IfModule>
->>>>>>> bc662e7 (modified code)
 
     RewriteEngine On
 

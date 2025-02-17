@@ -3,12 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Facades\Blade;
 
->>>>>>> bc662e7 (modified code)
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -28,10 +24,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-<<<<<<< HEAD
-        //
-=======
-        
->>>>>>> bc662e7 (modified code)
     }
 }

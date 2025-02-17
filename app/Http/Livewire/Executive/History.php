@@ -3,14 +3,6 @@
 namespace App\Http\Livewire\Executive;
 
 use Livewire\Component;
-<<<<<<< HEAD
-
-class History extends Component
-{
-    public function render()
-    {
-        return view('livewire.executive.history');
-=======
 use App\Models\Term;
 use App\Models\Member;
 use App\Models\MemberRole;
@@ -128,6 +120,5 @@ class History extends Component
     {
         $members = $this->selected_term->members()->get();
         return view('livewire.executive.history', ['members' => $members]);
->>>>>>> bc662e7 (modified code)
     }
 }

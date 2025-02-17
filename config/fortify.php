@@ -74,12 +74,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'home' => RouteServiceProvider::HOME,
-=======
-    //'home' => RouteServiceProvider::HOME,
     'home' => '/',
->>>>>>> bc662e7 (modified code)
 
     /*
     |--------------------------------------------------------------------------

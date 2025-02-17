@@ -17,14 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             AdminSeeder::class,
-<<<<<<< HEAD
-            ConsonantSeeder::class,
-            PartnershipSeeder::class,
-            ScheduleSeeder::class,
-        ]);
-    }
-}
-=======
             //ScheduleSeeder::class,
             ConsonantSeeder::class,
             PartnershipSeeder::class,
@@ -39,4 +31,3 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
->>>>>>> bc662e7 (modified code)

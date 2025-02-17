@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Admin extends Model
 {
-<<<<<<< HEAD
-    use HasFactory;
-=======
     protected $guarded = [];
     use HasFactory;
     public function user()
@@ -32,5 +29,4 @@ class Admin extends Model
     {
         return $this->hasMany(Pdf::class);
     }
->>>>>>> bc662e7 (modified code)
 }

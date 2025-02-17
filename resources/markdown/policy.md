@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Privacy Policy
-
-Edit this file to define the privacy policy for your application.
-=======
 # 개인정보취급방침
 
 1. 개인정보 수집 원칙
@@ -132,4 +127,3 @@ Edit this file to define the privacy policy for your application.
 12. 개인정보 관련 불만사항 및 분쟁의 처리
 
 개인정보와 관련된 문의나 불만 사항은 위의 연락처나 정부에서 운영중인 개인정보침해신고센터 (http://www.cyberprivacy.or.kr 전화 02-1336)에 처리를 신청하시고 개인정보에관한 분쟁이 있는 경우에는 한국정보보호센터 내의 개인정보분쟁조정위원회에 처리를 의뢰하시기 바랍니다.
->>>>>>> bc662e7 (modified code)

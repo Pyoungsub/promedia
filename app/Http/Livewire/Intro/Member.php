@@ -3,14 +3,6 @@
 namespace App\Http\Livewire\Intro;
 
 use Livewire\Component;
-<<<<<<< HEAD
-
-class Member extends Component
-{
-    public function render()
-    {
-        return view('livewire.intro.member');
-=======
 use App\Models\MemberRole;
 use App\Models\Partnership;
 use App\Models\PresentMember;
@@ -99,6 +91,5 @@ class Member extends Component
     {
         $members = PresentMember::all();
         return view('livewire.intro.member', ['members' => $members]);
->>>>>>> bc662e7 (modified code)
     }
 }

@@ -9,11 +9,6 @@ class Partnership extends Model
 {
     use HasFactory;
     protected $guarded = [];
-<<<<<<< HEAD
-    public function consonant()
-    {
-        return $this->belongsTo(Consonant::class);
-=======
     public function consonant_partnership()
     {
         return $this->hasOne(ConsonantPartnership::class);
@@ -25,6 +20,5 @@ class Partnership extends Model
     public function url()
     {
         return $this->hasOne(PartnershipUrl::class);
->>>>>>> bc662e7 (modified code)
     }
 }

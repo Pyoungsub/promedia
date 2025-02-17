@@ -1,16 +1,4 @@
 <div>
-<<<<<<< HEAD
-    <div class="bg-center bg-no-repeat bg-cover bg-subbg9">
-        <div class="container2 flex flex-wrap items-center h-[40rem] relative justify-center">
-        <div class="text-center text-white">
-            <h3 class="tit2 before:mb-[0.4em] before:block before:w-[1.5em] before:h-[1px] before:bg-white before:m-auto" >행사일정</h3>
-        </div>
-        </div>
-    </div> 
-    <div class="py-32">
-        <h4 class="tit4">행사일정</h4>
-        <div class="max-w-screen-lg text-lg container2 font-nanumS"
-=======
     <div class="flex flex-wrap items-center h-[40rem] relative justify-center max-xl:h-[32rem] max-lg:h-[28rem] max-md:h-96 tab:h-80 mob:h-60 2sm:h-52 max-3sm:h-48 bg-center bg-no-repeat bg-cover bg-subbg9">
         <div class="text-center text-white mt-[-2em] tab:mt-0">
             <h3 class="tit2 before:mb-[0.4em] before:block before:w-[1.5em] before:h-[1px] before:bg-white before:m-auto">행사일정</h3>
@@ -21,7 +9,6 @@
         <div
             wire:ignore
             class="max-w-screen-lg text-lg container2 font-nanumS tab:font-noto 2sm:text-base"
->>>>>>> bc662e7 (modified code)
             x-data="{
                 days:['일', '월', '화', '수', '목', '금', '토'],
                 currentYear: (new Date()).getFullYear(),
@@ -95,31 +82,6 @@
             }"
             x-init="
                 generateCalendar();
-<<<<<<< HEAD
-                $watch('schedules', value =>  {
-                    console.log(value);
-                });
-            "
-        >
-            <div class="px-4 text-[1.8em] py-[0.4em] text-center relative">
-                <div class="absolute bottom-0 left-0 flex flex-wrap">
-                <button aria-label="calendar backward" class="flex items-center justify-center w-10 h-10 border border-cc" @click="prevMonth">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <polyline points="15 6 9 12 15 18" />
-                    </svg>
-                </button>
-                <button aria-label="calendar forward" class="flex items-center justify-center w-10 h-10 border border-l-0 w border-cc" @click="nextMonth">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <polyline points="9 6 15 12 9 18" />
-                    </svg>
-                </button>
-                <span class="block h-10 px-3 ml-1 text-sm leading-10 border border-cc bg-grizzle-200 text-cc">오늘</span>
-                <!-- 금월이 아닐 경우 bg-white  -->
-                </div>
-                <span tabindex="0" class="font-titleO"><span x-text="currentYear"></span>년 <span x-text="currentMonth+1"></span>월</span>
-=======
             "
         >
             <div class="">
@@ -150,27 +112,18 @@
                         @endif
                     @endauth
                 </div>
->>>>>>> bc662e7 (modified code)
             </div>
             <div class="pt-3 pb-4">
                 <div class="grid grid-cols-7 gap-px font-bold text-center border-t-2 bg-grizzle-300 border-x border-x-grizzle-300">
                     <template x-for="(day, index) in days">
-<<<<<<< HEAD
-                        <div class="flex items-center justify-center w-full h-16 bg-grizzle-200">
-=======
                         <div class="flex items-center justify-center w-full py-[1.1em] bg-grizzle-200 max-md:py-[0.8em] tab:py-2 mob:py-1">
->>>>>>> bc662e7 (modified code)
                             <p class="" :class="{'text-ca-sun' : index === 0, 'text-ca-sat' : index === 6}" x-text="day"></p>
                         </div>
                     </template>
                 </div>
                 <div class="grid grid-cols-7 gap-px text-right border bg-grizzle-300 border-grizzle-300">
                     <template x-for="(day, index) in month">
-<<<<<<< HEAD
-                        <div class="w-full aspect-square p-1 bg-white">
-=======
                         <div class="w-full aspect-[3/2] p-1 bg-white mob:aspect-[4/3] mob:min-h-[3.3em]">
->>>>>>> bc662e7 (modified code)
                             <p :class="{'text-ca-sun' : index%7 === 0, 'text-ca-sat' : index%7 === 6}" x-text="day.date"></p>
                             <template x-if="day.isEvent">
                                 <template x-for="event in day.eventsArray">
@@ -182,10 +135,6 @@
                                             x-data="{
                                                 result: morningAfternoon(event.from, event.to)
                                             }"
-<<<<<<< HEAD
-                                            x-init="console.log(result)"
-=======
->>>>>>> bc662e7 (modified code)
                                             class="w-full flex items-center justify-between px-1 text-sm text-black" 
                                             :class="result == 'am' ? 'bg-sche1' : result == 'pm' ? 'bg-sche2' : 'bg-sche3'"
                                             @mouseenter="show = true"
@@ -195,26 +144,16 @@
                                         </button>
                                         <div x-show="show" class="absolute bg-white border border-cc max-w-sm text-left">
                                             <p class="p-2 font-bold text-center bg-[#d9e2eb]" x-text="'행사일자 : '+event.effective_date"></p>
-<<<<<<< HEAD
-                                            <div class="px-3 py-4">
-                                                <div class="pb-2 border-b border-cc">
-                                                <p class="mb-2 text-xl"><strong x-text="event.name"></strong></p>
-=======
                                             <div class="px-3 py-4 max-md:text-base">
                                                 <div class="pb-2 border-b border-cc">
                                                 <p class="mb-2 text-xl max-md:text-lg"><strong x-text="event.name"></strong></p>
->>>>>>> bc662e7 (modified code)
                                                 <p><strong>행사시간:</strong> <span x-text="event.from.slice(0,5)"></span> ~ <span x-text="event.to.slice(0,5)"></span></p>
                                                 <p><strong>행사장소:</strong> <span x-text="event.place"></span></p>
                                                 </div>
                                                 <template x-if="event.description">
                                                     <div class="pt-2 text-center">
                                                         <p class="mb-4 text-left txtOver3"><strong>행사내용: </strong><span x-text="event.description"></span></p>
-<<<<<<< HEAD
-                                                        <a class="px-2 py-1 font-bold border border-cc" href="./view.php">자세히보기<span class="align-middle material-symbols-rounded">chevron_right</span></a>
-=======
                                                         <a class="px-2 py-1 font-bold border border-cc" target="_blank" :href="`/events/schedules/${event.id}`">자세히보기<span class="align-middle material-symbols-rounded">chevron_right</span></a>
->>>>>>> bc662e7 (modified code)
                                                     </div>
                                                 </template>
                                             </div>
@@ -226,16 +165,6 @@
                     </template>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div class="mt-4 text-lg font-bold text-right">
-                <span class="mr-4"><span class="inline-block w-12 h-3 bg-sche1 mr-[0.5em] align-middle"></span>: 오전</span>
-                <span class="mr-4"><span class="inline-block w-12 h-3 bg-sche2 mr-[0.5em] align-middle"></span>: 오후</span>
-                <span class=""><span class="inline-block w-12 h-3 bg-sche3 mr-[0.5em] align-middle"></span>: 종일</span>
-            </div>
-        </div>
-    </div>
-</div>
-=======
             <div class="mt-4 text-lg font-bold text-right max-md:text-base max-md:mt-0">
                 <span class="mr-4 mob:block mob:mr-0"><span class="inline-block w-12 h-3 bg-sche1 mr-[0.5em] align-middle"></span>: 오전</span>
                 <span class="mr-4 mob:block mob:mr-0"><span class="inline-block w-12 h-3 bg-sche2 mr-[0.5em] align-middle"></span>: 오후</span>
@@ -245,4 +174,3 @@
     </div>
      
 </div>
->>>>>>> bc662e7 (modified code)

@@ -3,14 +3,6 @@
 namespace App\Http\Livewire\Pdf;
 
 use Livewire\Component;
-<<<<<<< HEAD
-
-class Index extends Component
-{
-    public function render()
-    {
-        return view('livewire.pdf.index');
-=======
 use App\Models\Pdf;
 use Spatie\PdfToImage\Pdf as PdfToImage;
 use Livewire\WithFileUploads;
@@ -71,6 +63,5 @@ class Index extends Component
         })
         ->paginate(10);
         return view('livewire.pdf.index', ['pdfs' => $pdfs]);
->>>>>>> bc662e7 (modified code)
     }
 }

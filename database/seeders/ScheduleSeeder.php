@@ -25,8 +25,4 @@ class ScheduleSeeder extends Seeder
             ['admin_id' => 1, 'name' => '안녕하세요 다다미디어입니다.', 'effective_date' => '2024-08-17', 'due_date' => '2024-08-17', 'from' => '09:00:00', 'to' => '18:00:00', 'place' => '서울특별시 영등포구 당산로41길 11', 'description' => '테스트용 자료 입니다. 행사와 연관 없습니다.', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> bc662e7 (modified code)

@@ -1,10 +1,6 @@
 <div>
     @if ($paginator->hasPages())
         @php(isset($this->numberOfPaginatorsRendered[$paginator->getPageName()]) ? $this->numberOfPaginatorsRendered[$paginator->getPageName()]++ : $this->numberOfPaginatorsRendered[$paginator->getPageName()] = 1)
-<<<<<<< HEAD
-        
-=======
->>>>>>> bc662e7 (modified code)
         <nav>
             <ul class="pagination">
                 {{-- Previous Page Link --}}

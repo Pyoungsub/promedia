@@ -9,11 +9,8 @@ class Schedule extends Model
 {
     use HasFactory;
     protected $guarded = [];
-<<<<<<< HEAD
-=======
     public function admin()
     {
         return $this->belongsTo(Admin::class);
     }
->>>>>>> bc662e7 (modified code)
 }

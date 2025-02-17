@@ -66,13 +66,8 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-
-<<<<<<< HEAD
-    'timezone' => 'UTC',
-=======
     //'timezone' => 'UTC',
     'timezone' => 'Asia/Seoul',
->>>>>>> bc662e7 (modified code)
 
     /*
     |--------------------------------------------------------------------------
@@ -84,13 +79,7 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
-<<<<<<< HEAD
-    'locale' => 'en',
-=======
     'locale' => 'ko',
->>>>>>> bc662e7 (modified code)
-
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale

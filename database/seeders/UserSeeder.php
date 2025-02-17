@@ -17,8 +17,4 @@ class UserSeeder extends Seeder
         //
         User::insert(['name' => '최고관리자', 'email' => 'admin@kopma.kr', 'password' => Hash::make('password'), 'created_at' => now(), 'updated_at' => now()]);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> bc662e7 (modified code)

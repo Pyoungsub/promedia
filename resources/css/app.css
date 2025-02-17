@@ -4,10 +4,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
-@import 'fonts.css';
-@import 'custom.css';
-=======
 @layer base{
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
     /* font-family: "Noto Sans KR", sans-serif; */
@@ -684,4 +680,3 @@ padding-left: 2px;
 
 /* max-3sm */
 @media screen and (max-width: 360px) {}
->>>>>>> bc662e7 (modified code)

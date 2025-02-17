@@ -4,10 +4,8 @@ namespace App\Http\Livewire\Main;
 
 use Livewire\Component;
 use App\Models\Schedule;
-<<<<<<< HEAD
-=======
 use App\Models\Announcement;
->>>>>>> bc662e7 (modified code)
+
 use Carbon\Carbon;
 class Board extends Component
 {
@@ -38,13 +36,7 @@ class Board extends Component
     }
     public function render()
     {
-<<<<<<< HEAD
-        return view('livewire.main.board');
-    }
-}
-=======
         $announcements = Announcement::orderBy('updated_at', 'desc')->take(5)->get();
         return view('livewire.main.board', ['announcements' => $announcements]);
     }
 }
->>>>>>> bc662e7 (modified code)

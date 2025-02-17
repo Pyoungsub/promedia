@@ -25,36 +25,16 @@ module.exports = {
             center: true, // 컨테이너를 가운데 정렬
             padding: '1rem', // 기본 패딩 설정
             screens: {
-<<<<<<< HEAD
-            'tab': '100%', 
-            'max-md': '100%', 
-            'max-lg': '1024px', 
-            'max-xl': '1280px', 
-            '2xl': '1536px', 
-            '3xl': '1800px', 
-=======
                 'tab': '100%', 
                 'max-md': '100%', 
                 'max-lg': '1024px', 
                 'max-xl': '1280px', 
                 '2xl': '1536px', 
                 '3xl': '1800px', 
->>>>>>> bc662e7 (modified code)
             },
         },
         extend: {
             screens: {
-<<<<<<< HEAD
-            '2xl': {'max' : '1799px'}, 
-            'max-xl': {'max' : '1535px'}, 
-            'max-lg': {'max' : '1279px'}, 
-            'max-md': {'max' : '1023px'}, 
-            'tab': {'max' : '767px'}, 
-            'mob': {'max' : '640px'}, 
-            '2sm': {'max' : '420px'}, 
-            'max-3sm': {'max' : '360px'}, 
-            // '2xl': '1536px',
-=======
                 '2xl': {'max' : '1799px'}, 
                 'max-xl': {'max' : '1535px'}, 
                 'max-lg': {'max' : '1279px'}, 
@@ -67,7 +47,6 @@ module.exports = {
             },
             fontSize : {
                 'inhe' : ['inherit', 'inherit'], 
->>>>>>> bc662e7 (modified code)
             },
             colors: {
                 'grizzle' : {
@@ -90,44 +69,6 @@ module.exports = {
                 'sche2': '#d2ebd3',
                 'sche3': '#d1ddf3',
                 '4b': '#454545',
-<<<<<<< HEAD
-                bb: '#333',
-                cc: '#ccc',
-                'popbg' : 'rgba(0,0,0,0.5)'
-            },
-            width : {
-            '15' : '3.75rem',
-            calc1 : 'calc(100% - 7.5em)',
-            calc2 : 'calc(100% - 3em)',
-            calc3 : 'calc(100% - 220px)',
-            calc4 : 'calc(25% - 20px)',
-            calc5 : 'calc(100% - 19rem)',
-            calc6 : 'calc(100% - 7em)',
-            calc7 : 'calc(100% - 180px)',
-            calc8 : 'calc(100% - 200px)',
-            calc9 : 'calc(100%/3 - 20px)',
-            calc10 : 'calc(20% - 20px)',
-            calc11 : 'calc(100% - 7.5rem)',
-            calc12 : 'calc(50% - 50px)',
-            calc13 : 'calc(100% - 3.5em)',
-            'calcN' : 'calc(100% - 15em)',
-            
-            },
-            maxWidth: {
-            '4/5': '80%',
-            },
-            height : {
-            '2xlcalc' : 'calc(100vh - 125px)',
-            'intcalc' : 'calc(100% - 3.5em)',
-            },
-            margin : {
-            mcalc4 : 'calc(80px/3)',
-            mcalc9 : '30px',
-            mcalc10 : 'calc(100px/4)',
-            },
-            padding : {
-            'his' : 'calc(50% - 8em)',
-=======
                 'bb': '#333',
                 'cc': '#ccc',
                 'popbg' : 'rgba(0,0,0,0.5)'
@@ -168,7 +109,6 @@ module.exports = {
             },
             padding : {
                 'his' : 'calc(50% - 8em)',
->>>>>>> bc662e7 (modified code)
             },
             backgroundImage: {
                 'mainsec2' : 'url("/storage/company/main_sec2_bg.png")',
@@ -176,11 +116,7 @@ module.exports = {
                 'mainsec4' : 'url("/storage/company/main_sec4_bg.jpg")',
                 'mainintro' : 'url("/storage/company/m_intro_bg.jpg")',
                 'mainintro2' : 'url("/storage/company/m_intro_bg2.png")',
-<<<<<<< HEAD
-                'pressbg' : 'url("/storage/company/press_bg.jpg")',
-=======
                 'mainintro3' : 'url("/storage/company/m_intro_bg3.png")',
->>>>>>> bc662e7 (modified code)
                 'subbg1' : 'url("/storage/company/subbg_01.jpg")',
                 'subbg2' : 'url("/storage/company/subbg_02.jpg")',
                 'subbg3' : 'url("/storage/company/subbg_03.jpg")',
@@ -190,33 +126,6 @@ module.exports = {
                 'subbg8' : 'url("/storage/company/subbg_08.jpg")',
                 'subbg9' : 'url("/storage/company/subbg_09.jpg")',
                 'gra1': 'linear-gradient(to right, rgba(51, 51, 51, 0.3) 80%, transparent)',
-<<<<<<< HEAD
-                'kopma': 'url("/storage/company/kopma.png")',
-                'mark': 'url("/storage/company/bg_mark.png")',
-                'mark2': 'url("/storage/company/mark2.png")',
-                'noimg': 'url("/storage/company/mem_noimage.jpg")',
-                'quotes': 'url("/storage/icon/quotes.png")',
-                'quotes2': 'url("/storage/icon/quotes2.png")',
-                'tabbox': 'url("/storage/icon/tabbox_bg.png")',
-                'tab': 'url("/storage/icon/tab_bg.png")',
-            },
-            backgroundPosition: {
-            'top-center' : 'top center'
-            },
-            backgroundSize: {
-            'full' : '100% 100%',
-            'none' : '0 0'
-            },
-            boxShadow : {
-            'sh1' : '0 0 5px #333',
-            'sh2' : '0 2px 2px rgba(0, 0, 0, 0.1)',
-            },
-            translate: {
-            'center': '-50%',
-            }
-        }
-    }, 
-=======
                 'quotes': 'url("/storage/icons/quotes.png")',
                 'quotes2': 'url("/storage/icons/quotes2.png")',
                 'kopma': 'url("/storage/company/kopma.png")',
@@ -254,7 +163,6 @@ module.exports = {
             }
         }
     },
->>>>>>> bc662e7 (modified code)
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };

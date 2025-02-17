@@ -12,12 +12,8 @@
         "laravel/jetstream": "^2.9",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-<<<<<<< HEAD
-        "livewire/livewire": "^2.12"
-=======
         "livewire/livewire": "^2.5",
         "spatie/pdf-to-image": "^2.3"
->>>>>>> bc662e7 (modified code)
     },
     "require-dev": {
         "facade/ignition": "^2.5",
