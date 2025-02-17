@@ -7,5 +7,30 @@ use Illuminate\Database\Eloquent\Model;
 
 class Admin extends Model
 {
+<<<<<<< HEAD
     use HasFactory;
+=======
+    protected $guarded = [];
+    use HasFactory;
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function references()
+    {
+        return $this->hasMany(Reference::class);
+    }
+    public function announcements()
+    {
+        return $this->hasMany(Announcement::class);
+    }
+    public function medias()
+    {
+        return $this->hasMany(Media::class);
+    }
+    public function pdfs()
+    {
+        return $this->hasMany(Pdf::class);
+    }
+>>>>>>> bc662e7 (modified code)
 }

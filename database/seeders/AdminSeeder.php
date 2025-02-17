@@ -21,4 +21,8 @@ class AdminSeeder extends Seeder
             'updated_at' => now()
         ]);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc662e7 (modified code)

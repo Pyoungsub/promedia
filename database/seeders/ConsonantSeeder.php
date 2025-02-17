@@ -31,4 +31,8 @@ class ConsonantSeeder extends Seeder
             ['consonant' => 'ㅎ', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc662e7 (modified code)

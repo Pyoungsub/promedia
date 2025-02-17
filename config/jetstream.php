@@ -58,8 +58,13 @@ return [
     */
 
     'features' => [
+<<<<<<< HEAD
         Features::termsAndPrivacyPolicy(),
         // Features::profilePhotos(),
+=======
+        // Features::termsAndPrivacyPolicy(),
+        Features::profilePhotos(),
+>>>>>>> bc662e7 (modified code)
         // Features::api(),
         // Features::teams(['invitations' => true]),
         Features::accountDeletion(),

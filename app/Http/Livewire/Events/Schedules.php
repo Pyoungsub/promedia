@@ -10,7 +10,10 @@ class Schedules extends Component
     public $firstDay;
     public $lastDay;
     public $schedules = [];
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc662e7 (modified code)
     public function getDaysOfMonth($year, $month)
     {
         $this->reset('schedules');
@@ -28,4 +31,8 @@ class Schedules extends Component
     {
         return view('livewire.events.schedules');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc662e7 (modified code)

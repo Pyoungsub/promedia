@@ -2,6 +2,7 @@
     <livewire:main.carousel />
     <livewire:main.board />
     <livewire:main.infos />
-    <livewire:main.event />
+    <livewire:main.events />
     <livewire:main.partners />
+    <livewire:main.announcepop />
 </div>

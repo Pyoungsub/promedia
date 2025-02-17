@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Main;
 
 use Livewire\Component;
+use App\Models\Pdf;
 
 class Infos extends Component
 {

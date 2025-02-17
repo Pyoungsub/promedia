@@ -8,6 +8,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Scripts -->
@@ -18,5 +19,42 @@
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+=======
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        @livewireStyles
+    </head>
+    <body class="leading-none">
+        <x-jet-banner />
+
+        <div 
+            class=""
+            x-data="{ scrolled: false }" 
+        >
+            @livewire('navigation-menu')
+
+            <!-- Page Heading -->
+            @if (isset($header))
+                <header class="bg-white shadow">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        {{ $header }}
+                    </div>
+                </header>
+            @endif
+
+            <!-- Page Content -->
+            <main>
+                {{ $slot }}
+            </main>
+        </div>
+        <livewire:footer />
+        @stack('modals')
+
+        @livewireScripts
+>>>>>>> bc662e7 (modified code)
     </body>
 </html>

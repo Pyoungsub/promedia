@@ -25,4 +25,8 @@ class Boards extends Component
     {
         return view('components.headers.boards');
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bc662e7 (modified code)
