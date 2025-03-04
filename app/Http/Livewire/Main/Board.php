@@ -5,7 +5,8 @@ namespace App\Http\Livewire\Main;
 use Livewire\Component;
 use App\Models\Schedule;
 use App\Models\Announcement;
-
+use App\Models\Event;
+use App\Models\Pdf;
 use Carbon\Carbon;
 class Board extends Component
 {
@@ -37,6 +38,12 @@ class Board extends Component
     public function render()
     {
         $announcements = Announcement::orderBy('updated_at', 'desc')->take(5)->get();
-        return view('livewire.main.board', ['announcements' => $announcements]);
+        $event_photos = Event::orderBy('date', 'desc')->with('first_event_photo')->take(10)->get();
+        $pdfs = Pdf::latest()->take(5)->get();
+        return view('livewire.main.board', [
+            'announcements' => $announcements, 
+            'event_photos' => $event_photos, 
+            'pdfs' => $pdfs
+        ]);
     }
 }
