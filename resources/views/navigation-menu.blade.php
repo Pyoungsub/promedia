@@ -46,14 +46,14 @@
                         x-show="show"
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em]"
                     >
-                        <ul class=" flex text-grizzle-800 flex-warp">
-                            <li class="flex-none"><a href="{{route('intro.greetings')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">인사말</a></li>
-                            <li class="flex-none"><a href="{{route('intro.history')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">연혁</a></li>
-                            <li class="flex-none"><a href="{{route('intro.articles-of-incorporation')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">정관</a></li>
-                            <li class="flex-none"><a href="{{route('intro.member')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">조직도</a></li>
-                            <li class="flex-none"><a href="{{ route('executive.history') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">역대임원</a></li>
-                            <li class="flex-none"><a href="{{route('intro.location')}}" class="block hover:text-point-100 px-[1.5em]">찾아오시는 길</a></li>
-                        </ul>
+                        <div class="flex text-grizzle-800 flex-warp">
+                            <a href="{{route('intro.greetings')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">인사말</p></a>
+                            <a href="{{route('intro.history')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">연혁</p></a>
+                            <a href="{{route('intro.articles-of-incorporation')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">정관</p></a>
+                            <a href="{{route('intro.member')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">조직도</p></a>
+                            <a href="{{ route('executive.history') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">역대임원</p></a>
+                            <a href="{{route('intro.location')}}"><p class="hover:text-point-100 px-[1.5em] w-max">찾아오시는 길</p></a>
+                        </div>
                     </div>
                 </li>
                 <li 
@@ -67,10 +67,11 @@
                         x-show="show"
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em]"
                     >
-                        <ul class=" flex text-grizzle-800 flex-warp">
-                            <li class="flex-none"><a href="{{route('member.company')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">회원사 소개</a></li>
-                            <li class="flex-none"><a href="{{ route('boards.create-account') }}" class="block hover:text-point-100 px-[1.5em] border-[#ccc]">회원가입안내</a></li>
-                        </ul>
+                        <div class="flex text-grizzle-800 flex-warp">
+                            <a href="{{ route('member.lists') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 소개</p></a>
+                            <a href="{{route('member.company')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 매체</p></a>
+                            <a href="{{ route('boards.create-account') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">회원가입안내</p></a>
+                        </div>
                     </div>
                 </li>
                 <li 
@@ -84,11 +85,11 @@
                         x-show="show"
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em]"
                     >
-                        <ul class="flex text-grizzle-800 flex-warp">
-                            <li class="flex-none"><a href="{{route('events.photos')}}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">행사사진</a></li>
-                            <li class="flex-none"><a href="{{ route('events.schedules') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">행사 일정</a></li>
-                            <li class="flex-none"><a href="{{ route('pdf') }}" class="block hover:text-point-100 px-[1.5em] border-[#ccc]">전문신문협회보</a></li>
-                        </ul>
+                        <div class="flex text-grizzle-800">
+                            <a href="{{route('events.photos')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">행사사진</p></a>
+                            <a href="{{ route('events.schedules') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">행사 일정</p></a>
+                            <a href="{{ route('pdf') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">전문신문협회보</p></a>
+                        </div>
                     </div>
                 </li>
                 <li 
@@ -102,10 +103,10 @@
                         x-show="show" 
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em] right-0"
                     >
-                        <ul class="flex text-grizzle-800 flex-warp">
-                            <li class="flex-none"><a href="{{ route('boards.references') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">자료실</a></li>
-                            <li class="flex-none"><a href="{{ route('boards.press-passes') }}" class="block hover:text-point-100 px-[1.5em] border-[#ccc]">기자증발급</a></li>
-                        </ul>
+                        <div class="flex text-grizzle-800">
+                            <a href="{{ route('boards.references') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">자료실</p></a>
+                            <a href="{{ route('boards.press-passes') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">기자증발급</p></a>
+                        </div>
                     </div>
                 </li>
                 <li 
@@ -119,12 +120,11 @@
                         x-show="show"
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em] right-0"
                     >
-                        <ul class=" flex text-grizzle-800 flex-warp w-[27em] ">
-                            <li><a href="{{ route('boards.announcements') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">공지사항</a></li>
-                            <li><a href="{{ route('boards.media') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">보도자료</a></li>
-                            <li><a href="{{ route('member.lists') }}" class="block hover:text-point-100 px-[1.5em] border-r border-[#ccc]">회원사</a></li>
-                            <li><a href="{{ route('boards.general') }}" class="block hover:text-point-100 px-[1.5em] border-[#ccc]">자유게시판</a></li>
-                        </ul>
+                        <div class="flex text-grizzle-800">
+                            <a href="{{ route('boards.announcements') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] min-w-fit w-max">공지사항</p></a>
+                            <a href="{{ route('boards.media') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">보도자료</p></a>
+                            <a href="{{ route('boards.general') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">자유게시판</p></a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -191,7 +191,7 @@
                         <!-- 요청: 모바일 1차 depth는 소메뉴가 있을 때 클릭 시 -->
                         <div x-show="active" class="bg-grizzle-300 overflow-hidden">
                             <ul class="p-4">
-                                <li><a href="{{ route('member.company') }}" class="block mb-[0.5em] pl-2">회원사 소개</a></li>
+                                <li><a href="{{ route('member.company') }}" class="block mb-[0.5em] pl-2">회원사 매체</a></li>
                                 <li><a href="{{ route('boards.create-account') }}" class="block pl-2">회원가입 안내</a></li>
                             </ul>
                         </div>
@@ -310,7 +310,8 @@
                         <span class="block w-full cursor-pointer text-4xl font-titleO text-bb mb-[1em] relative max-lg:text-3xl">회원사</span>
                         <div class="relative">
                             <ul class="">
-                                <li><a href="{{route('member.company')}}" class="block mb-[0.5em] ">회원사 소개</a></li>
+                                <li><a href="{{ route('member.lists') }}" class="block mb-[0.5em]">회원사 소개</a></li>
+                                <li><a href="{{route('member.company')}}" class="block mb-[0.5em] ">회원사 매체</a></li>
                                 <li><a href="{{ route('boards.create-account') }}" class="block">회원가입 안내</a></li>
                             </ul>
                         </div>
@@ -345,7 +346,7 @@
                             <ul class="">
                                 <li><a href="{{ route('boards.announcements') }}" class="block mb-[0.5em]">공지사항</a></li>
                                 <li><a href="{{ route('boards.media') }}" class="block mb-[0.5em]">보도자료</a></li>
-                                <li><a href="{{ route('member.lists') }}" class="block mb-[0.5em]">회원사</a></li>
+                                
                                 <li><a href="{{ route('boards.general') }}" class="block mb-[0.5em]">자유게시판</a></li>
                             </ul>
                         </div>

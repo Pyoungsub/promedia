@@ -72,15 +72,15 @@
     </div>
     <div class="container2 max-w-cont">
         <h4 class="tit6">회비내역</h4>
-        <table class="w-full font-bold border-t-2 border-t-bb">
+        <table class="w-full border-t-2 border-t-bb">
             <tbody>
                 <tr class="border-b border-grizzle-300">
-                    <td class="p-6 text-center bg-grizzle-300 w-[11em] tab:w-[8em] mob:w-[6em] mob:p-3">입회비</td>
-                    <td class="p-6 mob:p-3">700,000원</td>
+                    <td class="p-6 text-center border-r bg-grizzle-200 border-grizzle-300 mob:p-3">입회비</td>
+                    <td class="p-6 mob:p-3"><span class="font-bold line-through decoration-point-200 decoration-2">1,000,000원</span> 全 회원화 운동, 입회비 <span class="text-xl text-point-200 font-bold">700,000원</span></td>
                 </tr>
                 <tr class="border-b border-grizzle-300">
-                    <td class="p-6 text-center border-r bg-grizzle-200 border-grizzle-300 mob:p-3">입회비</td>
-                    <td class="p-6 mob:p-3"><span class="text-xl text-point-200">90,000원</span></td>
+                    <td class="p-6 text-center bg-grizzle-300 w-[11em] tab:w-[8em] mob:w-[6em] mob:p-3">연회비</td>
+                    <td class="p-6 mob:p-3"><span class="text-xl text-point-200 font-bold">1,080,000원</span></td>
                 </tr>
                 <tr>
                     <td class="p-6 text-center border-r bg-grizzle-200 border-grizzle-300 mob:p-3">입금구좌</td>
@@ -91,5 +91,11 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="mt-24 flex items-center justify-center">
+        <a class="bg-blue-900 rounded-lg p-4 flex items-center gap-2 text-white" href="{{asset('storage/download/membership.hwp')}}" download>
+            회원가입안내서 및 입회원서 다운받기
+            <svg class="stroke-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
+        </a>
     </div>
 </div>

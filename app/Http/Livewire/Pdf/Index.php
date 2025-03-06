@@ -61,6 +61,7 @@ class Index extends Component
             $selected_date = \Carbon\Carbon::createFromFormat('Y-m', $selected_date)->startOfMonth();
             return $query->where('date', $selected_date);
         })
+        ->orderBy('date', 'desc')
         ->paginate(10);
         return view('livewire.pdf.index', ['pdfs' => $pdfs]);
     }

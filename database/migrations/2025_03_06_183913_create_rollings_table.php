@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePartnershipsTable extends Migration
+class CreateRollingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreatePartnershipsTable extends Migration
      */
     public function up()
     {
-        Schema::create('partnerships', function (Blueprint $table) {
+        Schema::create('rollings', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('img_path', 2048)->nullable();
+            $table->string('img_path', 2048);
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreatePartnershipsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('partnerships');
+        Schema::dropIfExists('rollings');
     }
 }

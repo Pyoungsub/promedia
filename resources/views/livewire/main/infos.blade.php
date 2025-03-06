@@ -58,30 +58,30 @@
             </div>
         </div>
     </div-->
-    <div class="max-w-4xl p-2 mx-auto">
-        <div class="grid grid-cols-2 gap-6 max-lg:grid-cols-2 mob:grid-cols-1">
-            <div class="text-white">
-                <div class="bg-point-100 py-[3.6rem] px-8 h-full text-[1.25rem] font-score max-xl:text-[1.1rem] tab:text-base mob:text-xl mob:py-8">
-                    <div class="h-full justify-center flex border-[#5477be] border-y flex-col max-lg:py-[2em]">
-                        <h4 class="tit5 mb-[0.4em]">사무국 연락처</h4>
-                        <h4 class="tit5 text-[#5ac2f5] flex items-center mb-[1.5em]"><span class="material-symbols-rounded mr-[0.3em]">call</span>02-334-7251</h4>
-                        <ul class="">
-                            <li class="mb-[0.5em]"><span class="text-bold after1">팩스</span><span class="cont">02-334-7279</span></li>
-                            <li class=""><span class="text-bold after1">메일</span><span class="cont">kosna1964@naver.com</span></li>
-                        </ul>
+    <div class="max-w-7xl mx-auto">
+        <div class="w-full flex flex-wrap justify-center gap-4 text-white">
+            <div class="basis-96 max-w-96 grow aspect-[4/3] bg-point-100 p-8">
+                <div class="border-[#5477be] border-y h-full">
+                    <h4 class="mt-8 font-titleO leading-normal text-xl">사무국 연락처</h4>
+                    <h4 class="mt-1 flex items-center text-[#5ac2f5]"><span class="material-symbols-rounded">call</span><span class="font-titleO text-lg">02)334-7251</span></h4>
+                    <p class="mt-6 text-sm"><span class="text-bold after1">팩스</span>02-334-7279</p>
+                    <p class="text-sm"><span class="text-bold after1">메일</span>kosna1964@naver.com</p>
+                </div>
+            </div>
+            <div class="basis-96 max-w-96 grow aspect-[4/3] bg-blue-800 p-8">
+                <div class="border-[#5477be] border-y h-full">
+                    <h4 class="mt-8 font-titleO leading-normal text-xl">한국전문신문협회<br>회원가입안내</h4>
+                    <div class="mt-8">
+                        <a href="{{route('boards.create-account')}}" class="border border-white px-2 py-1.5 text-xs">가입안내 보러가기</a>
                     </div>
                 </div>
             </div>
-            <div class="text-white">
-                <div class="bg-[#2e3ba4] py-[3.6rem] px-8 h-full text-[1.25rem] font-score max-xl:text-[1.1rem] tab:text-base mob:text-xl mob:py-8">
-                    <div class="h-full justify-center flex border-[#5477be] border-y flex-col max-lg:py-[2em]">
-                    <h4 class="tit5 mb-[0.4em]">입회비 및 회비 입금 계좌</h4>
-                    <h4 class="tit5 text-[#5ac2f5] flex items-center mb-[1.5em]"><span class="material-symbols-rounded mr-[0.3em]">id_card</span>예금주 : (사)한국전문신문협회</h4>
-                    <ul class="">
-                        <li class="mb-[0.5em]"><span class="after1"><img class="h-[1.4em] inline align-middle" src="{{ asset('storage/company/kb_bank_logo.png') }}" alt="KB 국민은행"></span><span class="cont">009-01-1135-182</span></li>
-                        <li class=""><span class="after1"><img class="h-[1.4em] inline align-middle" src="{{ asset('storage/company/shinhan_logo.png') }}" alt="신한은행"></span><span class="cont">100-003-283205</span></li>
-                    </ul>
-                    </div>
+            <div class="basis-96 max-w-96 grow aspect-[4/3] bg-[#2e3ba4] p-8">
+                <div class="border-[#5477be] border-y h-full">
+                    <h4 class="mt-8 font-titleO leading-normal text-xl">입회비 및 회비 입금 계좌</h4>
+                    <h4 class="font-titleO text-[#5ac2f5] flex items-center mb-[1.5em]"><span class="material-symbols-rounded mr-[0.3em]">id_card</span>예금주 : (사)한국전문신문협회</h4>
+                    <p class="mt-6 text-sm"><span class="after1"><img class="h-[1.4em] inline align-middle" src="{{ asset('storage/company/kb_bank_logo.png') }}" alt="KB 국민은행"></span><span class="cont">009-01-1135-182</span></p>
+                    <p class="text-sm"><span class="after1"><img class="h-[1.4em] inline align-middle" src="{{ asset('storage/company/shinhan_logo.png') }}" alt="신한은행"></span><span class="cont">100-003-283205</span></p>
                 </div>
             </div>
         </div>
