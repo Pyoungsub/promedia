@@ -15,8 +15,9 @@ class CreateRollingsTable extends Migration
     {
         Schema::create('rollings', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
             $table->string('img_path', 2048);
-            $table->string('title')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
         });
     }

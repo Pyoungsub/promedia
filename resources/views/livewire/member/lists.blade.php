@@ -1,5 +1,5 @@
 <div class="">
-    <x-headers.communications />
+    <x-headers.member />
     <div class="py-32 max-lg:py-28 max-md:py-24 tab:py-20 2sm:py-16">
         <div class="container2 max-w-cont">
             <h4 class="tit4">회원사</h4>

@@ -28,7 +28,7 @@
                 </div>
             </div>
             @if($announce->announcementFile)
-                <a href="{{ asset('storage/'. $announce->announcementFile->file_path) }}" class="">파일보기</a>
+                <a href="{{ asset('storage/'. $announce->announcementFile->file_path) }}" class="block w-fit mb-4 rounded-lg px-4 py-2 bg-blue-700 text-white" download>첨부자료 내려받기</a>
             @endif
             <div class="leading-[1.5] border-t-[2px] border-b border-b-cc text-[17px] tab:text-base mob:font-noto">
                 <div x-show="!modify" class=" py-[4em] px-[2em] max-lg:px-[1em] max-lg:py-[3em] mob:py-[2em] max-3sm:px-0 max-3sm:py-[1em]">

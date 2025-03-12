@@ -1,6 +1,6 @@
 <div id="m_sec4" class="py-[5rem]">
     <h3 class="tit1 mb-[1.2em]">
-        <span>회원사 소개</span>
+        <span>한국전문신문협회 회원사</span>
     </h3>
     <div 
         class="container2"

@@ -69,10 +69,12 @@
                 </div>
             </div>
             <div class="basis-96 max-w-96 grow aspect-[4/3] bg-blue-800 p-8">
-                <div class="border-[#5477be] border-y h-full">
-                    <h4 class="mt-8 font-titleO leading-normal text-xl">한국전문신문협회<br>회원가입안내</h4>
-                    <div class="mt-8">
-                        <a href="{{route('boards.create-account')}}" class="border border-white px-2 py-1.5 text-xs">가입안내 보러가기</a>
+                <div class="border-[#5477be] border-y h-full py-8">
+                    <div class="bg-no-repeat bg-right bg-contain h-full" style="background-image:url('storage/icons/go_to_signup.png')">
+                        <h4 class="font-titleO leading-normal text-xl">한국전문신문협회<br>회원가입안내</h4>
+                        <div class="mt-8">
+                            <a href="{{route('member.create-account')}}" class="border border-white px-2 py-1.5 text-xs">가입안내 보러가기</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire;
+use App\Http\Controllers\StoreImageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +28,7 @@ Route::prefix('member')->group(function () {
     Route::name('member.')->group(function () {
         Route::get('/company', Livewire\Member\Companies::class)->name('company');
         Route::get('/lists', Livewire\Member\Lists::class)->name('lists');
+        Route::get('/create-account', Livewire\Boards\CreateAccount::class)->name('create-account');
     });
 });
 Route::prefix('executive')->group(function () {
@@ -51,9 +53,10 @@ Route::prefix('boards')->group(function () {
         Route::get('/press-passes', Livewire\Boards\PressPasses::class)->name('press-passes');
         Route::get('/announcements', Livewire\Boards\Announcements::class)->name('announcements');
         Route::get('/announces/{id}', Livewire\Boards\Announces::class)->name('announces');
+        Route::get('/member-news', Livewire\Boards\MemberNews::class)->name('member-news');
+        Route::get('/member-news/{id}', Livewire\Boards\MemberNewsView::class)->name('member-news-view');
         Route::get('/general', Livewire\Boards\Generals::class)->name('general');
         Route::get('/general/{id}', Livewire\Boards\GeneralArticle::class)->name('general-article');
-        Route::get('/create-account', Livewire\Boards\CreateAccount::class)->name('create-account');
     });
 });
 Route::get('/safeguard', Livewire\Safeguard::class)->name('safeguard');
@@ -68,4 +71,5 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::post('/board/store-image', [StoreImageController::class, 'article'])->name('board.store-image')->middleware('admin');
 });

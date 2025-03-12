@@ -14,14 +14,14 @@
                 case 'boards.media':
                     this.pageTitle = '보도자료';
                     break;
+                case 'boards.member-news':
+                    this.pageTitle = '회원사 소식';
+                    break;
+                case 'boards.member-news-view':
+                    this.pageTitle = '회원사 소식';
+                    break;
                 case 'boards.general':
                     this.pageTitle = '자유게시판';
-                    break;
-                case 'boards.general-article':
-                    this.pageTitle = '자유게시판';
-                    break;
-                case 'member.lists':
-                    this.pageTitle = '회원사';
                     break;
                 default:
                     this.pageTitle = 'Default Title';
@@ -61,14 +61,14 @@
                             보도자료<span class="w-0 absolute block h-[3px] bg-point-100 bottom-[-1px] duration-500 left-0 transition-x-center mob:hidden"></span>
                         </a>
                     </template>
+                    <template x-if="pageTitle !== '회원사 소식'">
+                        <a href="{{route('boards.member-news')}}" class="block py-[1.4em] max-xl:py-[1.2em] max-lg:py-[1em] tab:py-[0.8em]">
+                            회원사 소식<span class="w-0 absolute block h-[3px] bg-point-100 bottom-[-1px] duration-500 left-0 transition-x-center mob:hidden"></span>
+                        </a>
+                    </template>
                     <template x-if="pageTitle !== '자유게시판'">
                         <a href="{{route('boards.general')}}" class="block py-[1.4em] max-xl:py-[1.2em] max-lg:py-[1em] tab:py-[0.8em]">
                             자유게시판<span class="w-0 absolute block h-[3px] bg-point-100 bottom-[-1px] duration-500 left-0 transition-x-center mob:hidden"></span>
-                        </a>
-                    </template>
-                    <template x-if="pageTitle !== '회원사'">
-                        <a href="{{route('member.lists')}}" class="block py-[1.4em] max-xl:py-[1.2em] max-lg:py-[1em] tab:py-[0.8em]">
-                            회원사<span class="w-0 absolute block h-[3px] bg-point-100 bottom-[-1px] duration-500 left-0 transition-x-center mob:hidden"></span>
                         </a>
                     </template>
                 </div>
@@ -89,18 +89,18 @@
                     :class="currentRoute == 'boards.media' ? 'bg-point-300 w-full' : 'w-0 bg-point-400 transform transition-all duration-500 ease-out group-hover:w-full'"
                 ></span>
             </div>
+            <div class="relative font-bold border-r border-solid border-grizzle-300 group" :class="currentRoute == 'boards.member-news' ? 'text-point-300' : ''"> 
+                <a href="{{route('boards.member-news')}}" class="block py-[1.4em] hover:text-point">회원사 소식</a>
+                <span 
+                    class="absolute bottom-[-1px] h-[3px] left-1/2 -translate-x-1/2" 
+                    :class="currentRoute == 'boards.member-news' || currentRoute == 'boards.member-news-view' ? 'bg-point-300 w-full' : 'w-0 bg-point-400 transform transition-all duration-500 ease-out group-hover:w-full'"
+                ></span>
+            </div>
             <div class="relative font-bold border-r border-solid border-grizzle-300 group" :class="currentRoute == 'boards.general' ? 'text-point-300' : ''"> 
                 <a href="{{route('boards.general')}}" class="block py-[1.4em] hover:text-point">자유게시판</a>
                 <span 
                     class="absolute bottom-[-1px] h-[3px] left-1/2 -translate-x-1/2" 
-                    :class="currentRoute == 'boards.general' ? 'bg-point-300 w-full' : 'w-0 bg-point-400 transform transition-all duration-500 ease-out group-hover:w-full'"
-                ></span>
-            </div>
-            <div class="relative font-bold border-r border-solid border-grizzle-300 group" :class="currentRoute == 'member.lists' ? 'text-point-300' : ''"> 
-                <a href="{{route('member.lists')}}" class="block py-[1.4em] hover:text-point">회원사</a>
-                <span 
-                    class="absolute bottom-[-1px] h-[3px] left-1/2 -translate-x-1/2" 
-                    :class="currentRoute == 'member.lists' ? 'bg-point-300 w-full' : 'w-0 bg-point-400 transform transition-all duration-500 ease-out group-hover:w-full'"
+                    :class="currentRoute == 'boards.general' || currentRoute == 'boards.general-article' ? 'bg-point-300 w-full' : 'w-0 bg-point-400 transform transition-all duration-500 ease-out group-hover:w-full'"
                 ></span>
             </div>
         </div>

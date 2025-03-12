@@ -21,6 +21,10 @@ class Admin extends Model
     {
         return $this->hasMany(Announcement::class);
     }
+    public function member_news()
+    {
+        return $this->hasMany(MemberNews::class);
+    }
     public function medias()
     {
         return $this->hasMany(Media::class);

@@ -68,9 +68,9 @@
                         class="depth2wrap absolute z-20 text-lg depth02 py-[0.8em]"
                     >
                         <div class="flex text-grizzle-800 flex-warp">
-                            <a href="{{ route('member.lists') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 소개</p></a>
                             <a href="{{route('member.company')}}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 매체</p></a>
-                            <a href="{{ route('boards.create-account') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">회원가입안내</p></a>
+                            <a href="{{ route('member.lists') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 소개</p></a>
+                            <a href="{{ route('member.create-account') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">회원가입안내</p></a>
                         </div>
                     </div>
                 </li>
@@ -123,6 +123,7 @@
                         <div class="flex text-grizzle-800">
                             <a href="{{ route('boards.announcements') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] min-w-fit w-max">공지사항</p></a>
                             <a href="{{ route('boards.media') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">보도자료</p></a>
+                            <a href="{{ route('boards.member-news') }}"><p class="hover:text-point-100 px-[1.5em] border-r border-[#ccc] w-max">회원사 소식</p></a>
                             <a href="{{ route('boards.general') }}"><p class="hover:text-point-100 px-[1.5em] border-[#ccc] w-max">자유게시판</p></a>
                         </div>
                     </div>
@@ -192,7 +193,7 @@
                         <div x-show="active" class="bg-grizzle-300 overflow-hidden">
                             <ul class="p-4">
                                 <li><a href="{{ route('member.company') }}" class="block mb-[0.5em] pl-2">회원사 매체</a></li>
-                                <li><a href="{{ route('boards.create-account') }}" class="block pl-2">회원가입 안내</a></li>
+                                <li><a href="{{ route('member.create-account') }}" class="block pl-2">회원가입 안내</a></li>
                             </ul>
                         </div>
                     </li>
@@ -223,7 +224,7 @@
                         @click.outside="active = false"
                         x-data="{
                             active:false,
-                            routeArray:['boards.references', 'boards.press-passes', 'boards.create-account'],
+                            routeArray:['boards.references', 'boards.press-passes', 'member.create-account'],
                             init()
                             {
                                 if(this.routeArray.includes(currentRoute))
@@ -272,7 +273,7 @@
                             <ul class="p-4">
                                 <li><a href="{{ route('boards.announcements') }}" class="block mb-[0.5em] pl-2">공지사항</a></li>
                                 <li><a href="{{ route('boards.media') }}" class="block mb-[0.5em] pl-2">보도자료</a></li>
-                                <li><a href="{{ route('member.lists') }}" class="block pl-2">회원사 소식</a></li>
+                                <li><a href="{{ route('boards.member-news') }}" class="block pl-2">회원사 소식</a></li>
                                 <li><a href="{{ route('boards.general') }}" class="block mb-[0.5em] pl-2">자유게시판</a></li>
                             </ul>
                         </div>
@@ -312,7 +313,7 @@
                             <ul class="">
                                 <li><a href="{{ route('member.lists') }}" class="block mb-[0.5em]">회원사 소개</a></li>
                                 <li><a href="{{route('member.company')}}" class="block mb-[0.5em] ">회원사 매체</a></li>
-                                <li><a href="{{ route('boards.create-account') }}" class="block">회원가입 안내</a></li>
+                                <li><a href="{{ route('member.create-account') }}" class="block">회원가입 안내</a></li>
                             </ul>
                         </div>
                     </li>
@@ -346,7 +347,7 @@
                             <ul class="">
                                 <li><a href="{{ route('boards.announcements') }}" class="block mb-[0.5em]">공지사항</a></li>
                                 <li><a href="{{ route('boards.media') }}" class="block mb-[0.5em]">보도자료</a></li>
-                                
+                                <li><a href="{{ route('boards.member-news') }}" class="block mb-[0.5em]">회원사소식</a></li>
                                 <li><a href="{{ route('boards.general') }}" class="block mb-[0.5em]">자유게시판</a></li>
                             </ul>
                         </div>
