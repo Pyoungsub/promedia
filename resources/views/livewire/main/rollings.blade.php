@@ -106,10 +106,10 @@
                         @endif
                         @if(!empty($banner->url))
                             <a href="{{$banner->url}}" target="_blank">
-                                <div class="mx-auto aspect-[3/1] w-full bg-cover bg-center bg-no-repeat" style="background-image:url({{asset('storage/'. $banner->img_path)}})"></div>
+                                <div class="mx-auto aspect-[3/1] w-full bg-contain bg-center bg-no-repeat border" style="background-image:url({{asset('storage/'. $banner->img_path)}})"></div>
                             </a>
                         @else
-                            <div class="mx-auto aspect-[3/1] w-full bg-cover bg-center bg-no-repeat" style="background-image:url({{asset('storage/'. $banner->img_path)}})"></div>
+                            <div class="mx-auto aspect-[3/1] w-full bg-contain bg-center bg-no-repeat border" style="background-image:url({{asset('storage/'. $banner->img_path)}})"></div>
                         @endif
                     </div>
                 @endforeach
