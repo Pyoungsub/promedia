@@ -40,7 +40,7 @@
                                             </div>
                                         @endif
                                     @endauth
-                                    <a class="block h-[400px] p-3 bg-white border border-cc hover:border-point-100 hover:border-2 hover:shadow-lg max-md:h-[320px] tab:h-[37vw] mob:h-[53vw] max-3sm:h-[125vw]" href="storage/{{$pdf->file_path}}" target="_blank"><span class="block w-full h-full overflow-hidden"><img class="block object-cover object-top w-full h-full" src="{{asset('storage/'.$pdf->preview_file_path)}}" alt="20240621 pdf 썸네일"></span></a>
+                                    <a class="block h-[400px] p-3 bg-white border border-cc hover:border-point-100 hover:border-2 hover:shadow-lg max-md:h-[320px] tab:h-[37vw] mob:h-[53vw] max-3sm:h-[125vw]" href="storage/{{$pdf->file_path}}" target="_blank"><span class="block w-full h-full overflow-hidden"><img class="block object-cover object-top w-full h-full" src="{{asset('storage/'.$pdf->preview_path)}}" alt="20240621 pdf 썸네일"></span></a>
                                         <p class="py-4 text-lg max-md:pt-2 max-md:pb-3 max-md:text-base">{{ substr($pdf->date, 0, 7) }}</p>
                                     <a class="inline-block px-2 py-1 text-sm font-bold tracking-tighter duration-500 border-2 rounded-lg border-point-400 text-point-400 hover:bg-point-400 hover:text-white" href="storage/{{$pdf->file_path}}" target="_blank">PDF 보기</a>
                                 </li>

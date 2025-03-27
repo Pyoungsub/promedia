@@ -253,7 +253,7 @@
                                 <div class="swiper-wrapper">
                                     @foreach($pdfs as $pdf)
                                         <div class="swiper-slide border">
-                                            <div class="w-full aspect-[21/29.7] bg-no-repeat bg-cover bg-center" style="background-image:url({{asset('storage/'.$pdf->preview_file_path)}})"></div>
+                                            <div class="w-full aspect-[21/29.7] bg-no-repeat bg-cover bg-center" style="background-image:url({{asset('storage/'.$pdf->preview_path)}})"></div>
                                         </div>
                                     @endforeach    
                                 </div>

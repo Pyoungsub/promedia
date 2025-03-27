@@ -40,14 +40,14 @@ class Index extends Component
             Storage::disk('public')->makeDirectory('previews');
         }
         $pdf->saveImage($previewFullPath);
-        auth()->user()->admin->pdfs()->firstOrCreate(['date' => \Carbon\Carbon::createFromFormat('Y-m', $this->date)->startOfMonth(), 'file_path' => $path, 'preview_file_path' => $previewPath]);
+        auth()->user()->admin->pdfs()->firstOrCreate(['date' => \Carbon\Carbon::createFromFormat('Y-m', $this->date)->startOfMonth(), 'file_path' => $path, 'preview_path' => $previewPath]);
         $this->reset(['uploadPdfModal', 'date', 'file']);
     }
     public function delPDF($id)
     {
         $pdf = Pdf::find($id);
         Storage::delete('public/'.$pdf->file_path);
-        Storage::delete('public/'.$pdf->preview_file_path);
+        Storage::delete('public/'.$pdf->preview_path);
         $pdf->delete();
     }
     public function updatedSelectedDate()
